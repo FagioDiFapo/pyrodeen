@@ -1,0 +1,22 @@
+[project]
+name = "pyrodeen"
+version = "0.0.1"
+authors = [
+  { name="Genis Bonet Garcia", email="gbonetgarcia@gmail.com" },
+]
+description = "Python module for rotating detonation engine simulations"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.scripts]
+pyrodeen = "cli.cli:main"
+
+#[project.urls]
+#Homepage = ""
+#Issues = ""
