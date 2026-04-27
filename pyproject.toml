@@ -1,11 +1,14 @@
 [project]
 name = "pyrodeen"
 version = "0.0.1"
+dependencies = [
+  "numpy"
+]
 authors = [
   { name="Genis Bonet Garcia", email="gbonetgarcia@gmail.com" },
 ]
 description = "Python module for rotating detonation engine simulations"
-readme = "README.md"
+readme = "readme.md"
 requires-python = ">=3.11"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -14,8 +17,13 @@ classifiers = [
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
 
+[project.optional-dependencies]
+dev = [
+  "pytest"
+]
+
 [project.scripts]
-pyrodeen = "cli:main"
+pyrodeen = "pyrodeen.cli:main"
 
 #[project.urls]
 #Homepage = ""

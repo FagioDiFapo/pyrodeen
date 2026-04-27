@@ -10,7 +10,7 @@ def main():
     args = parse()
 
     if args.test_grid:
-        from grid import test_grid
+        from pyrodeen.grid import test_grid
         test_grid()
 
 if __name__ == "__main__":
